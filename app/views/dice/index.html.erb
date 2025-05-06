@@ -1,0 +1,19 @@
+<h1>Brian's hat is ridiculous, and I think he has dice in his pocket.</h1>
+
+<%
+  die1 = rand(1..6)
+  die2 = rand(1..6)
+  total = die1+die2
+%>
+
+<p>
+  <img src="/images/dice/<%= die1 %>.svg" alt="image of die">
+  <img src="/images/dice/<%= die2 %>.svg" alt="image of die">
+<p>
+
+<p>Total: <%= total %></p>
+
+<p>
+  <a href="/dice">Roll Again!</a>
+</p>
+<%= image_tag("https://i.redd.it/ulbf2zffpt971.jpg", alt: "Brian's Dice", width: 500) %>
